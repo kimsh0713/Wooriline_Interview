@@ -32,7 +32,9 @@ public class GameManager : MonoBehaviour
                     {
                         if (Cards[i] == SelectedCard)
                         {
-                            StartCoroutine(Up(Cards[i].transform, 1f));
+                            StopCoroutine(ClickCard(Cards[i].transform, 1f));
+                            StartCoroutine(ClickCard(Cards[i].transform, 1f));
+                            //StartCoroutine(Up(Cards[i].transform, 1f));
                         }
                         else
                         {
@@ -73,5 +75,12 @@ public class GameManager : MonoBehaviour
     public void Down(Transform obj)
     {
         obj.localPosition = new Vector3(obj.localPosition.x, 0, obj.localPosition.z);
+    }
+
+    private IEnumerator ClickCard(Transform obj, float distance)
+    {
+        StartCoroutine(Up(obj, distance));
+        yield return new WaitForSeconds(5f);
+        Down(obj);
     }
 }
