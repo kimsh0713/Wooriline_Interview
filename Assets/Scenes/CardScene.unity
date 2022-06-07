@@ -165,6 +165,18 @@ MonoBehaviour:
   - {fileID: 806771624}
   - {fileID: 2126840351}
   - {fileID: 1821647670}
+  Card_Position:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  Card_Number: 
 --- !u!4 &267127456
 Transform:
   m_ObjectHideFlags: 0
@@ -189,8 +201,8 @@ GameObject:
   m_Component:
   - component: {fileID: 338919746}
   - component: {fileID: 338919747}
-  - component: {fileID: 338919748}
   - component: {fileID: 338919749}
+  - component: {fileID: 338919748}
   m_Layer: 0
   m_Name: Card (5)
   m_TagString: Untagged
@@ -301,7 +313,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d9f460350add4e4982ceaf11e1a839d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUP: 0
+  Number: 9
+  Type: Heart
 --- !u!1 &387522763
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,8 +325,8 @@ GameObject:
   m_Component:
   - component: {fileID: 387522764}
   - component: {fileID: 387522765}
-  - component: {fileID: 387522766}
   - component: {fileID: 387522767}
+  - component: {fileID: 387522766}
   m_Layer: 0
   m_Name: Card (3)
   m_TagString: Untagged
@@ -424,7 +437,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d9f460350add4e4982ceaf11e1a839d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUP: 0
+  Number: 8
+  Type: Spade
 --- !u!1 &806771624
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,8 +449,8 @@ GameObject:
   m_Component:
   - component: {fileID: 806771625}
   - component: {fileID: 806771626}
-  - component: {fileID: 806771627}
   - component: {fileID: 806771628}
+  - component: {fileID: 806771627}
   m_Layer: 0
   m_Name: Card (7)
   m_TagString: Untagged
@@ -547,7 +561,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d9f460350add4e4982ceaf11e1a839d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUP: 0
+  Number: 7
+  Type: Spade
 --- !u!1 &1390073660
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,8 +573,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1390073661}
   - component: {fileID: 1390073662}
-  - component: {fileID: 1390073663}
   - component: {fileID: 1390073664}
+  - component: {fileID: 1390073663}
   m_Layer: 0
   m_Name: Card
   m_TagString: Untagged
@@ -670,7 +685,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d9f460350add4e4982ceaf11e1a839d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUP: 0
+  Number: 1
+  Type: Clover
 --- !u!1 &1401092061
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,8 +742,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1505147215}
   - component: {fileID: 1505147216}
-  - component: {fileID: 1505147217}
   - component: {fileID: 1505147218}
+  - component: {fileID: 1505147217}
   m_Layer: 0
   m_Name: Card (6)
   m_TagString: Untagged
@@ -838,7 +854,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d9f460350add4e4982ceaf11e1a839d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUP: 0
+  Number: 2
+  Type: Spade
 --- !u!1 &1527763073
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,8 +866,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1527763074}
   - component: {fileID: 1527763075}
-  - component: {fileID: 1527763076}
   - component: {fileID: 1527763077}
+  - component: {fileID: 1527763076}
   m_Layer: 0
   m_Name: Card (4)
   m_TagString: Untagged
@@ -961,7 +978,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d9f460350add4e4982ceaf11e1a839d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUP: 0
+  Number: 11
+  Type: Spade
 --- !u!1 &1821647670
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,8 +990,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1821647671}
   - component: {fileID: 1821647672}
-  - component: {fileID: 1821647673}
   - component: {fileID: 1821647674}
+  - component: {fileID: 1821647673}
   m_Layer: 0
   m_Name: Card (9)
   m_TagString: Untagged
@@ -1084,7 +1102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d9f460350add4e4982ceaf11e1a839d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUP: 0
+  Number: 12
+  Type: Spade
 --- !u!1 &1911449836
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,8 +1197,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2069256495}
   - component: {fileID: 2069256496}
-  - component: {fileID: 2069256497}
   - component: {fileID: 2069256498}
+  - component: {fileID: 2069256497}
   m_Layer: 0
   m_Name: Card (1)
   m_TagString: Untagged
@@ -1290,7 +1309,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d9f460350add4e4982ceaf11e1a839d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUP: 0
+  Number: 1
+  Type: Diamond
 --- !u!1 &2121998629
 GameObject:
   m_ObjectHideFlags: 0
@@ -1301,8 +1321,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2121998630}
   - component: {fileID: 2121998631}
-  - component: {fileID: 2121998632}
   - component: {fileID: 2121998633}
+  - component: {fileID: 2121998632}
   m_Layer: 0
   m_Name: Card (2)
   m_TagString: Untagged
@@ -1413,7 +1433,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d9f460350add4e4982ceaf11e1a839d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUP: 0
+  Number: 5
+  Type: Clover
 --- !u!1 &2126840351
 GameObject:
   m_ObjectHideFlags: 0
@@ -1424,8 +1445,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2126840352}
   - component: {fileID: 2126840353}
-  - component: {fileID: 2126840354}
   - component: {fileID: 2126840355}
+  - component: {fileID: 2126840354}
   m_Layer: 0
   m_Name: Card (8)
   m_TagString: Untagged
@@ -1536,4 +1557,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d9f460350add4e4982ceaf11e1a839d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUP: 0
+  Number: 3
+  Type: Heart
