@@ -16,6 +16,7 @@ public class CardSystem : MonoBehaviour
     private float time;
     private int positionIndex;
     private int cardIndex;
+    private int layerNum;
     #endregion
 
     #region UnityMethod
@@ -78,6 +79,9 @@ public class CardSystem : MonoBehaviour
                 {
                     var cardPos = SelectedCard.transform.position;
                     SelectedCard.transform.position = new Vector3(m_pos.x, cardPos.y, cardPos.z);
+                    var sp = SelectedCard.GetComponent<SpriteRenderer>();
+                    layerNum = sp.sortingOrder;
+                    sp.sortingOrder = 50;
                 }
             }
         }
@@ -101,10 +105,12 @@ public class CardSystem : MonoBehaviour
                     if (SelectedCard == Cards[i])
                         cardIndex = i;
                 }
-                SelectedCard.transform.localPosition = Card_Position[positionIndex];
+                //SelectedCard.transform.localPosition = Card_Position[positionIndex];
                 Cards.Insert(positionIndex, Cards[cardIndex]);
-                Cards.RemoveAt(cardIndex+1);
+                Cards.RemoveAt(cardIndex + 1);
                 ViewUpdate();
+                var sp = SelectedCard.GetComponent<SpriteRenderer>();
+                sp.sortingOrder = layerNum;
             }
         }
     }
